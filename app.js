@@ -27,7 +27,13 @@ app.get("/profile/:title/article/:username", (req, res) => {
   const formatedTitle = req.params.title.replace(/-/g, " ");
   res.send(`<h1>This book is ${formatedTitle} by ${req.params.username}</h1>`);
 });
-// query params
+
+// query params (can use in searching)
+// example:- "http://localhost:8001/product?search=Samsung%20S24&limit=10"
+app.get("/product", (req, res) => { 
+  console.log(req.query);
+  res.send(`<h1>User is searching for ${req.query.search}</h1>`);
+});
 
 app.listen(PORT, () => {
   console.log(`Running on http://localhost:${PORT}`);
