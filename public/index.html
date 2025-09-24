@@ -5,13 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div>
-        <h1 class="bitchin">good morninn !</h1>
-    </div>
+    <form action="/contact" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <!-- <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="write your message"></textarea>
+        </div> -->
+        <div>
+            <label for="message">Message</label>
+            <textarea name="user[message]" id="message" placeholder="write your message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
-</html>  
+</html>
