@@ -29,4 +29,15 @@
 2. Inside the middleware, send a 404 status uisng res.status(404) and a custom message or HTML response.
 3. Place this middleware after all defined routes to catch only unhandled requests
 
-` app.use((req, res)=>{res.status(404).send("Page not found");})` 
+`app.use((req, res)=>{res.status(404).send("Page not found")})`
+
+## Express router
+
+1. It is a tool to define modular and reusabel routes in an application.
+2. It is created uisng express.Router() to handle related routes together.
+3. Routes can be defined using methods like router.get() or router.post().
+4. It is mounted in the main app uisng app.use("/basepath", router)
+
+## Middleware
+1. Are the functions that have access the request object(req), the response object(res), and the next middleware function in the application's request-response cycle. 
+2. The next middleware function is commonly denoted by a variable named next
