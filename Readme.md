@@ -39,5 +39,10 @@
 4. It is mounted in the main app uisng app.use("/basepath", router)
 
 ## Middleware
-1. Are the functions that have access the request object(req), the response object(res), and the next middleware function in the application's request-response cycle. 
+
+1. Are the functions that have access the request object(req), the response object(res), and the next middleware function in the application's request-response cycle.
 2. The next middleware function is commonly denoted by a variable named next
+
+## EJS - Embedded JS template
+
+1. EJS is a simple templating language that lets you generate HTML markup with plain JS.
