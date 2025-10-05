@@ -46,3 +46,5 @@
 ## EJS - Embedded JS template
 
 1. EJS is a simple templating language that lets you generate HTML markup with plain JS.
+
+## API - (application programming interface)
