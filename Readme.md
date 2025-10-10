@@ -48,3 +48,6 @@
 1. EJS is a simple templating language that lets you generate HTML markup with plain JS.
 
 ## API - (application programming interface)
+
+1. A set of rules that allows softare programs to comunicate,
+2. A REST API is a specifc type that follows REST principles for web based interactions.

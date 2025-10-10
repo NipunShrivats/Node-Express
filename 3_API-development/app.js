@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
 app.get("/get", (req, res) => {
   res.json(books);
 });
+
 //get single book
 app.get("/get/:id", (req, res) => {
   const book = books.find((item) => item.id === Number(req.params.id));
@@ -35,6 +36,7 @@ app.get("/get/:id", (req, res) => {
     res.status(202).json({ message: "Book not found!" });
   }
 });
+
 // add a new book
 app.post("/add", (req, res) => {
   const newBook = {
@@ -67,6 +69,24 @@ app.put("/update/:id", (req, res) => {
   }
 });
 
+// delete a book
+app.delete("/delete/:id", (req, res) => {
+  const bookIndex = books.findIndex(
+    (item) => item.id === Number(req.params.id)
+  );
+  if (bookIndex !== -1) {
+    const bookName = books[bookIndex].title;
+    const deletedBook = books.splice(bookIndex, 1);
+    res.status(200).json({
+      message: `${bookName} has been deleted successfully`,
+      data: deletedBook[0],
+    });
+  } else {
+    res.status(404).json({
+      message: `Book not found`,
+    });
+  }
+});
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
