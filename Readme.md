@@ -51,3 +51,15 @@
 
 1. A set of rules that allows softare programs to comunicate,
 2. A REST API is a specifc type that follows REST principles for web based interactions.
+
+## MongoDB
+
+1. Documnet oriented NoSQL database
+2. It stores data inBSON (Binary JSON) format, which allows for nested fields and flexible schemas.
+3. Its a no SQL Database
+
+## SQL VS NOSQL
+
+-> SQL DB are relational with fixed schemas and strong consistency.
+-> NOSQL DB are non-relational with flexible schemas and better sclability.
+![SQL_vs_NOSQL](SQL_vs_NOSQL.png)
