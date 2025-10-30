@@ -63,3 +63,11 @@
 -> SQL DB are relational with fixed schemas and strong consistency.
 -> NOSQL DB are non-relational with flexible schemas and better sclability.
 ![SQL_vs_NOSQL](SQL_vs_NOSQL.png)
+
+## Mongoose
+
+1. Object Data Modeling library for MongoDb and NodeJs that provides a structured way to interact with MongoDB Database.
+
+Db : mongodb-basics
+ID: nipunrawat16_db_user
+pass: gqLyKnjfO440p3IF
